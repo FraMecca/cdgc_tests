@@ -1,0 +1,8 @@
+http://localhost:8080/file/10
+http://localhost:8080/file/1k
+http://localhost:8080/file/10k
+http://localhost:8080/static/10
+http://localhost:8080/static/1k
+http://localhost:8080/static/10k
+http://localhost:8080/empty
+http://localhost:8081/

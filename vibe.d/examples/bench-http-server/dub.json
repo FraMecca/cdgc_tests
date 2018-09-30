@@ -1,0 +1,8 @@
+{
+	"name": "bench-http-server",
+	"dependencies": {
+		"vibe-d:http": {"path": "../../"}
+	},
+	  "versions": ["VibeDefaultMain", "VibeManualMemoryManagement"],
+    "dflags-dmd": ["-I../../druntime/import/ -L../../phobos/generated/linux/debug/64/libphobos2.a"]
+}
