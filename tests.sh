@@ -14,7 +14,7 @@ dmd dustmite/dustmite.d dustmite/splitter.d -I../druntime/import/ -L../phobos/ge
 rm -rf ../druntime.reduced && cd ../druntime && ../tests/dm --force . 'grep -nR HAVE_FORK'
 
 # build vibe.d and test under stress
-# cd ./vibe.d/examples/bench-http-server && dub -f build
+cd ./vibe.d/examples/bench-http-server && dub -f build
 cd ./vibe.d/examples/bench-http-server/ && ./bench-http-server &
 tokill=$!
 sleep 1 # time for vibe to wakeup
