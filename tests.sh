@@ -1,13 +1,13 @@
 #!/bin/bash -e
 
 # run unittest for druntime
-cd ../druntime && make -j4 -f posix.mak BUILD=debug unittest
+cd ../druntime && make -j1 -f posix.mak BUILD=debug unittest
 
 # run unittest for phobos
-cd ../phobos && make -j4 -f posix.mak BUILD=debug unittest
+cd ../phobos && make -j1 -f posix.mak BUILD=debug unittest
 
 # run druntime Martin's suite
-cd ../druntime && make -j4 -f posix.mak BUILD=debug benchmark
+cd ../druntime && make -j1 -f posix.mak BUILD=debug benchmark
 
 # run dustmite
 dmd dustmite/dustmite.d dustmite/splitter.d -I../druntime/import/ -L../phobos/generated/linux/debug/64/libphobos2.a -ofdm
