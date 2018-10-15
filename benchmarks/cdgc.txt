@@ -1,0 +1,78 @@
+MIN bulk             0.313 s
+MIN bigval           0.660 s
+MIN l3cache          0.633 s
+MIN int              0.171 s
+MIN string           0.074 s
+MIN stomper          0.580 s
+MIN obj              0.198 s
+MIN resize           0.312 s
+MIN ptr              0.154 s
+MIN conalloc         1.827 s
+MIN concpu           1.875 s
+MIN vdparser         2.039 s
+MIN slist            1.921 s
+MIN conappend        0.437 s
+MIN conmsg           1.715 s
+MIN dlist            1.935 s
+MIN words            1.185 s
+MIN testgc3          2.068 s
+MIN rand_large       2.799 s
+MIN tree1            0.712 s
+MIN huge_single      0.004 s
+MIN tree2            1.011 s
+MIN rand_small       5.482 s
+compiling d1 programs...
+voronoi -n 30000
+	Number of collections:  10
+	Total GC prep time:  4 milliseconds
+	Total mark time:  148 milliseconds
+	Total sweep time:  14 milliseconds
+	Total page recovery time:  15 milliseconds
+	Max Pause Time:  52 milliseconds
+	Grand total GC time:  183 milliseconds
+GC summary:   70 MB,   10 GC  183 ms, Pauses  153 ms <   52 ms
+sbtree "16":
+	Number of collections:  57
+	Total GC prep time:  7 milliseconds
+	Total mark time:  37 milliseconds
+	Total sweep time:  241 milliseconds
+	Total page recovery time:  43 milliseconds
+	Max Pause Time:  8 milliseconds
+	Grand total GC time:  330 milliseconds
+GC summary:   35 MB,   57 GC  330 ms, Pauses   45 ms <    8 ms
+split "bible.txt 2":
+	Number of collections:  5
+	Total GC prep time:  0 milliseconds
+	Total mark time:  2 milliseconds
+	Total sweep time:  0 milliseconds
+	Total page recovery time:  0 milliseconds
+	Max Pause Time:  2 milliseconds
+	Grand total GC time:  2 milliseconds
+GC summary:   64 MB,    5 GC    2 ms, Pauses    2 ms <    2 ms
+em3d "-n 4000 -d 300 -i 74":
+	Number of collections:  7
+	Total GC prep time:  0 milliseconds
+	Total mark time:  67 milliseconds
+	Total sweep time:  0 milliseconds
+	Total page recovery time:  0 milliseconds
+	Max Pause Time:  32 milliseconds
+	Grand total GC time:  67 milliseconds
+GC summary:  117 MB,    7 GC   67 ms, Pauses   67 ms <   32 ms
+tsp "-c 1000000":
+	Number of collections:  11
+	Total GC prep time:  4 milliseconds
+	Total mark time:  197 milliseconds
+	Total sweep time:  16 milliseconds
+	Total page recovery time:  8 milliseconds
+	Max Pause Time:  57 milliseconds
+	Grand total GC time:  227 milliseconds
+GC summary:  145 MB,   11 GC  227 ms, Pauses  202 ms <   57 ms
+bisort "-s 2000000":
+	Number of collections:  8
+	Total GC prep time:  1 milliseconds
+	Total mark time:  89 milliseconds
+	Total sweep time:  12 milliseconds
+	Total page recovery time:  5 milliseconds
+	Max Pause Time:  36 milliseconds
+	Grand total GC time:  108 milliseconds
+GC summary:   70 MB,    8 GC  108 ms, Pauses   90 ms <   36 ms
