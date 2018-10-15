@@ -10,8 +10,8 @@ cd ../phobos && make -j1 -f posix.mak BUILD=debug unittest
 cd ../druntime && make -j1 -f posix.mak BUILD=debug benchmark
 
 # run dustmite
-dmd dustmite/dustmite.d dustmite/splitter.d -I../druntime/import/ -L../phobos/generated/linux/debug/64/libphobos2.a -ofdm
-rm -rf ../druntime.reduced && cd ../druntime && ../tests/dm --force . 'grep -nR HAVE_FORK'
+cd dustmite && dmd dustmite.d ./splitter.d   -I../../druntime/import/ -I../../phobos -L-L../../phobos/generated/linux/debug/64/ -dip1000 -dip25 -ofdm 
+rm -rf ../druntime.reduced && cd ../druntime && ../tests/dustmite/dm --force . 'grep -nR HAVE_FORK'
 
 # build vibe.d and test under stress
 cd ./vibe.d/examples/bench-http-server && dub -f build
