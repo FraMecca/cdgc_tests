@@ -1,0 +1,6 @@
+benchmark/huge_single.fork:0.stats:
+   Collection time  Stop-the-world time      Used before      Free before
+0         0.000025             0.000024                0                0
+1         0.001036             0.000060  140201120333824   94647106249600
+2         0.001992             0.000027                0  140201120333824
+

@@ -1,0 +1,6 @@
+benchmark/string.fork:0.stats:
+   Collection time  Stop-the-world time      Used before     Free before
+0         0.000050             0.000047  140732983195296  94133112667407
+1         0.000039             0.000037  140732983195776  94133112660967
+2         0.001081             0.000075  140732983197120  94133112695603
+
