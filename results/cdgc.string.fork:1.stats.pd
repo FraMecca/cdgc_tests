@@ -1,0 +1,6 @@
+benchmark/cdgc.string.fork:1.stats:
+   Collection time  Stop-the-world time      Used before     Free before
+0         0.000121             0.000115  140734815920592  94334176820495
+1         0.000018             0.000115  140734815921072  94334176814055
+2         0.001432    1545147012.773726  140734815922416  94334176848691
+
