@@ -1,0 +1,32 @@
+Done in 29 tests and 12 secs and 574 ms; reduced version is in ../../merge/src.reduced
+        Number of collections:  6
+        Total GC prep time:  1 milliseconds
+        Total mark time:  0 milliseconds
+        Total sweep time:  11 milliseconds
+        Max Pause Time:  0 milliseconds
+        Grand total GC time:  13 milliseconds
+GC summary:  532 MB,    6 GC   13 ms, Pauses    1 ms <    0 ms
+        Command being timed: "./fork.dustmite --force ../../merge/src/ grep -nR HAVE_FORK --DRT-gcopt=fork:1 --DRT-gcopt=profile:1"
+        User time (seconds): 11.54
+        System time (seconds): 1.55
+        Percent of CPU this job got: 103%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.61
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 503100
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 598110
+        Voluntary context switches: 152
+        Involuntary context switches: 1977
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 65680
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+
